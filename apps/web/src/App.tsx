@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { Button } from '@repo/ui/button'
+import { CopilotPopup } from '@copilotkit/react-ui'
+import '@copilotkit/react-ui/styles.css'
 import './App.css'
 
 function App() {
@@ -109,6 +111,13 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+
+      <CopilotPopup
+        labels={{
+          title: 'Sample Agent',
+          initial: 'Ask me about the weather anywhere.',
+        }}
+      />
     </>
   )
 }
